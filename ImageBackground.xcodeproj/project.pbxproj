@@ -13,6 +13,12 @@
 		3B4640E9269B4B8D006D22E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4640E7269B4B8D006D22E6 /* Main.storyboard */; };
 		3B4640EB269B4B8E006D22E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4640EA269B4B8E006D22E6 /* Assets.xcassets */; };
 		3B4640EE269B4B8E006D22E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4640EC269B4B8E006D22E6 /* LaunchScreen.storyboard */; };
+		3B4640F6269B5173006D22E6 /* ArmyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4640F5269B5173006D22E6 /* ArmyViewController.swift */; };
+		3B4640F8269B518A006D22E6 /* RockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4640F7269B518A006D22E6 /* RockViewController.swift */; };
+		3B4640FA269B5199006D22E6 /* AnimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4640F9269B5199006D22E6 /* AnimeViewController.swift */; };
+		3B4640FC269B51A9006D22E6 /* LakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4640FB269B51A9006D22E6 /* LakeViewController.swift */; };
+		3B4640FE269B51B6006D22E6 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4640FD269B51B6006D22E6 /* CarViewController.swift */; };
+		3B464100269B51C4006D22E6 /* forestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4640FF269B51C4006D22E6 /* forestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		3B4640EA269B4B8E006D22E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B4640ED269B4B8E006D22E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B4640EF269B4B8E006D22E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B4640F5269B5173006D22E6 /* ArmyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmyViewController.swift; sourceTree = "<group>"; };
+		3B4640F7269B518A006D22E6 /* RockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockViewController.swift; sourceTree = "<group>"; };
+		3B4640F9269B5199006D22E6 /* AnimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewController.swift; sourceTree = "<group>"; };
+		3B4640FB269B51A9006D22E6 /* LakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LakeViewController.swift; sourceTree = "<group>"; };
+		3B4640FD269B51B6006D22E6 /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
+		3B4640FF269B51C4006D22E6 /* forestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 		3B4640E0269B4B8D006D22E6 /* ImageBackground */ = {
 			isa = PBXGroup;
 			children = (
+				3B464101269B51CC006D22E6 /* ViewControlers */,
 				3B4640E1269B4B8D006D22E6 /* AppDelegate.swift */,
 				3B4640E3269B4B8D006D22E6 /* SceneDelegate.swift */,
 				3B4640E5269B4B8D006D22E6 /* ViewController.swift */,
@@ -65,6 +78,19 @@
 				3B4640EF269B4B8E006D22E6 /* Info.plist */,
 			);
 			path = ImageBackground;
+			sourceTree = "<group>";
+		};
+		3B464101269B51CC006D22E6 /* ViewControlers */ = {
+			isa = PBXGroup;
+			children = (
+				3B4640F9269B5199006D22E6 /* AnimeViewController.swift */,
+				3B4640F7269B518A006D22E6 /* RockViewController.swift */,
+				3B4640F5269B5173006D22E6 /* ArmyViewController.swift */,
+				3B4640FB269B51A9006D22E6 /* LakeViewController.swift */,
+				3B4640FD269B51B6006D22E6 /* CarViewController.swift */,
+				3B4640FF269B51C4006D22E6 /* forestViewController.swift */,
+			);
+			path = ViewControlers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +164,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B4640E6269B4B8D006D22E6 /* ViewController.swift in Sources */,
+				3B4640FA269B5199006D22E6 /* AnimeViewController.swift in Sources */,
+				3B464100269B51C4006D22E6 /* forestViewController.swift in Sources */,
+				3B4640F8269B518A006D22E6 /* RockViewController.swift in Sources */,
 				3B4640E2269B4B8D006D22E6 /* AppDelegate.swift in Sources */,
+				3B4640FC269B51A9006D22E6 /* LakeViewController.swift in Sources */,
 				3B4640E4269B4B8D006D22E6 /* SceneDelegate.swift in Sources */,
+				3B4640F6269B5173006D22E6 /* ArmyViewController.swift in Sources */,
+				3B4640FE269B51B6006D22E6 /* CarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
