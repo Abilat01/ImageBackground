@@ -11,21 +11,33 @@ class AnimeViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     
+    fileprivate var imageURL: URL?
+    fileprivate var image: UIImage? {
+        get {
+            return imageView.image
+        }
+        set {
+            imageView.image = newValue
+            imageView.sizeToFit()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        fetchImageAnime()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func fetchImageAnime() {
+        
+        imageURL = URL(string: "https://www.meme-arsenal.com/memes/cd64c6fdb67600778d35b5a56f0cd6c7.jpg")
+        let queue = DispatchQueue.global(qos: .utility)
+        queue.async {
+            guard let url = self.imageURL, let imageData = try? Data(contentsOf: url) else { return }
+            DispatchQueue.main.async {
+                self.image = UIImage(data: imageData)
+            }
+        }
     }
-    */
-
+  
 }
